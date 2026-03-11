@@ -1,13 +1,13 @@
 Web Application Security Testing Lab
 This project demonstrates hands-on testing of common web application vulnerabilities using an intentionally vulnerable application.
-The lab environment uses OWASP Juice Shop and security testing tools to analyze authentication flows and identify vulnerabilities.
+The testing environment uses OWASP Juice Shop together with security tools to analyze authentication flows and identify vulnerabilities.
 Lab Environment
 Tools used in this lab:
 OWASP Juice Shop
 Burp Suite
 Kali Linux
 Docker
-Firefox browser
+Firefox Browser
 Lab Architecture
 Firefox (Kali Linux)
         ↓

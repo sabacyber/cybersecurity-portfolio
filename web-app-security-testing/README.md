@@ -37,8 +37,8 @@ Request body:
 }
 This demonstrates how attackers can inspect authentication traffic.
 Evidence    
-
-
+![Login Request Header](screenshots/burp-login-request-header.png)
+![Login Request Body](screenshots/burp-login-request-body.png)
 2. SQL Injection – Authentication Bypass
 A SQL injection payload was used in the login form:
 ' OR 1=1 --
@@ -48,6 +48,8 @@ The application logged in as the administrator account and displayed the message
 You successfully solved a challenge:
 Login Admin
 Evidence
+![SQL Injection Request](screenshots/burp-sql-injection-request.png)
+![SQL Injection Admin Login](screenshots/sql-injection-admin-login.png)
 3. Cross-Site Scripting (XSS)
 A malicious script was injected through the application search feature.
 Payload used:
@@ -55,6 +57,7 @@ Payload used:
 Result:
 The browser executed the injected script, demonstrating a Cross-Site Scripting vulnerability.
 Evidence
+![XSS Alert](screenshots/xss-alert.png)
 4. JWT Authentication Token Analysis
 After successful login, the application returned a JSON Web Token (JWT) used for authentication.
 Example response:
@@ -65,6 +68,7 @@ Example response:
 }
 JWT tokens store authentication information and are commonly used in modern web applications.
 Evidence
+![Authentication Token](screenshots/burp-authentication-token.png)
 Security Impact
 These vulnerabilities can allow attackers to:
 bypass authentication

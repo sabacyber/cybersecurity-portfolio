@@ -35,34 +35,3 @@ This payload manipulates the backend SQL query, allowing authentication to succe
 Result:
 The application logged in as the administrator account.
 Evidence
-3. Cross-Site Scripting (XSS)
-A malicious script was injected through the search feature.
-Payload used:
-<script>alert("XSS")</script>
-Result:
-The browser executed the injected script, demonstrating a Cross-Site Scripting vulnerability.
-Evidence
-4. JWT Authentication Token Analysis
-After successful login, the server returned a JSON Web Token (JWT) used for authentication.
-Example response:
-{
- "authentication": {
-   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
- }
-}
-Evidence
-Security Impact
-These vulnerabilities can allow attackers to:
-bypass authentication
-execute malicious scripts in user browsers
-intercept authentication data
-manipulate application requests
-Skills Demonstrated
-This project demonstrates practical skills in:
-web application security testing
-HTTP request interception
-vulnerability analysis
-authentication flow analysis
-security documentation
-Outcome
-This lab provides hands-on experience with common web application vulnerabilities and demonstrates how security professionals test and document security flaws.

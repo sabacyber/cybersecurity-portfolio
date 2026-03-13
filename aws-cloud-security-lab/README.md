@@ -94,7 +94,20 @@ Security monitoring
 
 ![CloudWatch Log Group](screenshots/cloudwatch-log-stream.png)
 
-Security Concepts Demonstrated
+# Real-World Security Use Case
+
+Cloud security teams monitor privileged IAM activity to detect unauthorized administrative changes. Actions such as creating new users or attaching policies may indicate privilege escalation or account compromise.
+
+The monitoring pipeline implemented in this lab can help detect events such as:
+
+- Unauthorized creation of IAM users
+- Privilege escalation through policy attachment
+- Suspicious administrative activity performed by the root account
+- Unauthorized deletion of users or permissions
+
+By using CloudTrail logs combined with EventBridge detection rules, organizations can automatically detect and investigate suspicious activity within their AWS environments.
+
+## Security Concepts Demonstrated
 This lab demonstrates several key cloud security capabilities:
 Cloud audit logging
 Monitoring privileged IAM actions
@@ -111,3 +124,12 @@ CloudTrail configuration
 EventBridge event detection
 CloudWatch log analysis
 Cloud security architecture
+
+## Skills Demonstratede
+AWS security monitoring
+IAM activity auditing
+CloudTrail configuration
+Event-driven detection using EventBridge
+CloudWatch log analysis
+Cloud security architecture
+

@@ -2,20 +2,21 @@ name: DevSecOps Security Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   security-scan:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Set Up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: "3.9"
 
       - name: Install Bandit
         run: pip install bandit
@@ -27,6 +28,6 @@ jobs:
         run: docker build -t devsecops-demo .
 
       - name: Run Trivy Container Scan
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@0.16.0
         with:
           image-ref: devsecops-demo

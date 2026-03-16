@@ -3,25 +3,34 @@
 This project demonstrates how security can be integrated directly into the CI/CD pipeline using automated security scanning tools. The goal of this lab is to implement a DevSecOps workflow that automatically detects vulnerabilities in application code and container images during the build process.
 The pipeline uses GitHub Actions to perform automated security testing whenever code is pushed to the repository.
 
----
+--
 
 ## Lab Environment
 The pipeline was built using the following tools:
 ### Tool	Purpose
 
----
+--
 
 GitHub Actions	CI/CD pipeline automation
---
+
+-
+
 Bandit	Python static application security testing (SAST)
---
+
+-
+
 Docker	Containerization of the application
---
+
+-
+
 Trivy	Container vulnerability scanning
---
+
+-
+
 Python Flask	Demo web application
 
----
+--
+
 ## Pipeline Architecture
 ```
 Developer Push Code
@@ -38,7 +47,7 @@ Trivy Container Vulnerability Scan
 ```
 This pipeline demonstrates how security checks can be automatically enforced during the development lifecycle.
 
----
+--
 
 ## Security Scans Implemented
 - The pipeline performs the following automated security checks:
@@ -46,7 +55,7 @@ This pipeline demonstrates how security checks can be automatically enforced dur
 - Container Image Vulnerability Scanning
 - Automated CI/CD Security Validation
 
----
+--
 
 ## 1. GitHub Actions CI/CD Pipeline
 
@@ -62,7 +71,8 @@ The workflow performs the following tasks:
   
 Evidence
 ![CI/CD Pipeline](screenshots/github-actions-pipeline.png)
----
+
+--
 
 ## 2. Static Code Security Scan (Bandit)
 
@@ -75,7 +85,7 @@ This type of vulnerability can allow attackers to execute arbitrary commands on 
 Evidence
 ![Bandit Security Scan](screenshots/bandit-security-scan.png)
 
----
+--
 
 ## 3. Container Vulnerability Scan (Trivy)
 
@@ -90,7 +100,7 @@ The scan detected multiple vulnerabilities with varying severity levels includin
 Evidence
 ![Trivy Container Scan](screenshots/trivy-container-scan.png)
 
----
+--
 
 ## Security Impact
 
@@ -102,7 +112,7 @@ The DevSecOps pipeline helps organizations:
 - prevent insecure code from reaching production
 - enforce automated security policies in CI/CD workflows
 
----
+--
 
 ## Skills Demonstrated
 
@@ -113,7 +123,7 @@ This project demonstrates practical skills in:
 - container vulnerability scanning
 - secure software development lifecycle (SSDLC)
 
-  ---
+  --
   
 ## Real-World Security Use Case
 

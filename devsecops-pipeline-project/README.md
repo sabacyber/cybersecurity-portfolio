@@ -13,19 +13,19 @@ The pipeline was built using the following tools:
 
 GitHub Actions	CI/CD pipeline automation
 
--
+--
 
 Bandit	Python static application security testing (SAST)
 
--
+--
 
 Docker	Containerization of the application
 
--
+--
 
 Trivy	Container vulnerability scanning
 
--
+--
 
 Python Flask	Demo web application
 

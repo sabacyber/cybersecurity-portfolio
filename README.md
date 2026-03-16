@@ -8,13 +8,13 @@ Each project focuses on real-world security concepts such as vulnerability detec
 
 This portfolio demonstrates hands-on experience across several key cybersecurity domains:
 
-Application Security
+``` Application Security
         ↓
 Cloud Security Monitoring
         ↓
 DevSecOps Security Automation
         ↓
-Security Operations (SOC) Log Analysis
+Security Operations (SOC) Log Analysis ```
 
 
 ## Projects

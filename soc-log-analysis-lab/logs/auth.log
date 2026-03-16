@@ -1,1 +1,9 @@
-
+Jul 10 10:12:21 server sshd[1024]: Failed password for root from 192.168.1.10 port 22
+Jul 10 10:12:25 server sshd[1025]: Failed password for root from 192.168.1.10 port 22
+Jul 10 10:12:30 server sshd[1026]: Failed password for root from 192.168.1.10 port 22
+Jul 10 10:12:35 server sshd[1027]: Failed password for root from 192.168.1.10 port 22
+Jul 10 10:12:40 server sshd[1028]: Failed password for root from 192.168.1.10 port 22
+Jul 10 10:13:01 server sshd[1030]: Accepted password for user from 192.168.1.5 port 22
+Jul 10 10:14:10 server sshd[1035]: Failed password for admin from 10.0.0.7 port 22
+Jul 10 10:14:15 server sshd[1036]: Failed password for admin from 10.0.0.7 port 22
+Jul 10 10:14:20 server sshd[1037]: Failed password for admin from 10.0.0.7 port 22
